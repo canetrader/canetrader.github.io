@@ -51,6 +51,9 @@ function myMap() {
   var myCenter = new google.maps.LatLng(11.7455502, 78.1325846);
   var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  var marker = new google.maps.Marker({position:myCenter});
+  var marker = new google.maps.Marker({
+    position:myCenter,
+    title: "caneman"
+  });
   marker.setMap(map);
 }
