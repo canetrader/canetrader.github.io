@@ -1,4 +1,8 @@
 $(document).ready(function(){
+  //gif file on window load
+  $(window).on('load', function() {
+    $('#loading').hide();
+  });
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
