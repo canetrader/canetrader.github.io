@@ -276,3 +276,11 @@ top: 250px;
 left: 550px;
 z-index: 600;
 }
+::-moz-selection { /* Code for Firefox */
+    color:   #ffffff;
+    background: #00b300;
+}
+::selection {
+    color:   #ffffff;
+    background: #00b300;
+}
