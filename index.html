@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<div id="loading">
-  <img id="loading-image" src="img/loading.gif" alt="Loading..."/>
-</div>
 <head>
   <meta name="google-site-verification" content="XC7XtBH9Z-L442-h2V0carHc2oBXKj7slI09RbrY64w" />
   <title>Caneman Traders</title>
@@ -292,7 +289,9 @@
     </div>
   </div>
 </div>
-
+<div id="loading">
+  <img id="loading-image" src="img/loading.gif" alt="Loading..."/>
+</div>
 <!-- Add Google Maps -->
 <div id="googleMap" style="height:400px;width:100%;"></div>
 
@@ -302,7 +301,11 @@
   </a>
   <p><span class="copyright">Copyright &copy; Caneman Traders 2018</span></p>
 </footer>
-
+<script language="javascript" type="text/javascript">
+    $(window).on('load', function() {
+      $('#loading').hide();
+    });
+</script>
 <script src="js/cane.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI3VsVOMTbkc9q23uXDqoFGfViMeSL-Qo&callback=myMap"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
