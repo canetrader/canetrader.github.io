@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<div id="loading">
-  <img id="loading-image" src="img/loading.gif" alt="Loading..."/>
-</div>
 <head>
   <meta name="google-site-verification" content="XC7XtBH9Z-L442-h2V0carHc2oBXKj7slI09RbrY64w" />
   <title>Caneman Traders</title>
@@ -20,10 +17,6 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Lato|Merriweather|Maven+Pro:700" rel="stylesheet" type="text/css">
   <!-- Theme CSS -->
   <link href="css/cane.min.css" rel="stylesheet">
-  <!-- JQuery core js -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <!-- Bootstrap core js -->
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -302,8 +295,12 @@
 <script language="javascript" type="text/javascript">
   window.onload = function(){ document.getElementById("loading").style.display = "none" }
 </script>
+<!-- JQuery core js -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<!-- Bootstrap core js -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/cane.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI3VsVOMTbkc9q23uXDqoFGfViMeSL-Qo&callback=myMap"></script>
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI3VsVOMTbkc9q23uXDqoFGfViMeSL-Qo&callback=myMap"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115017733-1"></script>
 <script>
@@ -314,4 +311,7 @@
   gtag('config', 'UA-115017733-1');
 </script>
 </body>
+<div id="loading">
+  <img id="loading-image" src="img/loading.gif" alt="Loading..."/>
+</div>
 </html>
