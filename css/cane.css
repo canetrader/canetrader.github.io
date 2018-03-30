@@ -308,13 +308,12 @@ z-index: 600;
     color:   #ffffff;
     background: #00b300;
 }
-.fa {
+.social-icon{
   padding: 15px;
   font-size: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  border-radius: 50%;
   vertical-align: middle;
 }.fa:hover {
     opacity: 0.7;
@@ -342,4 +341,10 @@ z-index: 600;
 }.fa-youtube {
   background: #bb0000;
   color: white;
+}.fa-whatsapp{
+  background: #34af23;
+  color: white;
+}.social-btn{
+  font-size: 18px;
+  line-height: 1.3333333;
 }
