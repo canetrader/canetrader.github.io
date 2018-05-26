@@ -54,8 +54,16 @@ h4 {
   background-color: #f6f6f6;
 }
 .logo-small {
-  color: #00b300;
+  color: white;
+  background-color: #00b300;
+  border: 1px solid #00b300;
+  padding: 20px;
   font-size: 50px;
+  border-radius: 50%;
+}
+.logo-small:hover{
+  background-color: #ffffff;
+  color: #00b300;
 }
 .logo {
   color: #00b300;
@@ -399,4 +407,12 @@ footer .glyphicon {
 .fa-linkedin {
   background: #007bb5;
   color: white;
+}
+.site-url{
+  font-weight:bold;
+  text-decoration:underline;
+}
+.site-url > ul{
+  display:inline-block;
+  text-align:left;
 }

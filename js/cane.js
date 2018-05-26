@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('html, body').animate({
       scrollTop: $(hash).offset().top
     }, 900, function(){
-     
+
       // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
     });
@@ -30,20 +30,6 @@ $(document).ready(function(){
       }
     });
   });
-
-  $('body').on('click','#myBtn',function(){
-    $("#myModal").show();
-  });
-  // When the user clicks on <span> (x), close the modal
-  document.getElementsByClassName("modal-close")[0].onclick = function() {
-    $("#myModal").hide();
-  }
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == document.getElementById('myModal')) {
-      $("#myModal").hide();
-    }
-  }
 
 })
 

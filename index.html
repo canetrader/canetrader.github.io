@@ -3,7 +3,7 @@
 <head>
   <meta name="p:domain_verify" content="e745e2898a6b1365d34c1448b30b21b3"/>
   <meta name="google-site-verification" content="XC7XtBH9Z-L442-h2V0carHc2oBXKj7slI09RbrY64w" />
-  <title>Caneman Traders</title>
+  <title>Caneman Traders - Thithipu - The Sugar From Origin</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -227,7 +227,7 @@
         <div class="panel-footer">
           <h3>₹60</h3>
           <h4>per kilogram</h4>
-          <button id="myBtn" class="btn btn-lg">Order now</button>
+          <button id="buyNow" class="btn btn-lg">Order now</button>
         </div>
       </div>      
     </div>     
@@ -246,7 +246,7 @@
         <div class="panel-footer">
           <h3>₹60</h3>
           <h4>per kilogram</h4>
-          <button id="myBtn" class="btn btn-lg">Order now</button>
+          <button id="buyNow" class="btn btn-lg">Order now</button>
         </div>
       </div>      
     </div>       
@@ -265,7 +265,7 @@
         <div class="panel-footer">
           <h3>₹60</h3>
           <h4>per kilogram</h4>
-          <button id="myBtn" class="btn btn-lg">Ask for best price</button>
+          <button id="buyNow" class="btn btn-lg">Ask for best price</button>
         </div>
       </div>      
     </div>    
@@ -276,16 +276,32 @@
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT US</h2>
   <div class="row">
-    <div class="col-sm-4 text-center">
-      <a href="tel:+918344748485"><span class="glyphicon glyphicon-earphone logo"></span></a>
-    </div>
-    <div class="col-sm-8 follow-us">
+    <div class="col-sm-5">
       <p>Reach us to start a healthy life</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Karuppur, Salem-636012</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>4-90, Sengaradu, Karuppur, Salem, TamilNadu - 636012</p>
       <p><span class="glyphicon glyphicon-phone"></span> +91-8344748485</p>
       <p><span class="glyphicon glyphicon-phone"></span> +91-7010285385</p>
       <p><span class="glyphicon glyphicon-envelope"></span> sugarfromorigin@gmail.com</p>
       <p><span class="glyphicon glyphicon-envelope"></span> info@sugarfromorigin.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input id="contact-name" type="text" name="name" placeholder="Name" class="form-control"/>
+          <div class="err-message" id="err-name"></div>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="contact-email" name="email" placeholder="Email" type="email">
+          <div class="err-message" id="err-email"></div>
+        </div>
+      </div>
+      <textarea class="form-control" id="contact-comments" name="comments" placeholder="Comment" rows="5" cols="50"></textarea>
+      <div class="err-message" id="err-comments"></div><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button id="contact-send" class="btn btn-default pull-right">Send</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -319,11 +335,17 @@
       <h2 class="modal-title">We hope to see you soon!</h2>
     </div>
     <div class="modal-body">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +91-8344748485</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> info@sugarfromorigin.com</p>
+      <div id="modal-message">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +91-8344748485</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> sugarfromorigin@gmail.com</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> info@sugarfromorigin.com</p>
+      </div>
+      <div id="modal-send-message">
+        <div id="send-message-title"></div></br><div id="send-message-content"></div>
+      </div>
       <a href="tel:+918344748485" title="Call Now"><button id="myBtn" class="btn btn-primary btn-lg">Call now</button></a>
-      <a href="https://bit.ly/2Im6Evb" target="_blank" rel="noopener" title="Whatsapp"><button id="myBtn" class="fa fa-whatsapp btn btn-success btn-lg modal-whatsapp">Whatsapp</button></a>
+      <a id="send-whatsapp" href="https://bit.ly/2Im6Evb" target="_blank" rel="noopener" title="Whatsapp"><button id="myBtn" class="fa fa-whatsapp btn btn-success btn-lg modal-whatsapp">Whatsapp</button></a>
     </div>
     <div class="modal-footer">
       <h3>Caneman Traders</h3>
@@ -357,6 +379,7 @@
 <!-- Bootstrap core js -->
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/cane.min.js"></script>
+<script async src="js/message.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115017733-1"></script>
 <script>
