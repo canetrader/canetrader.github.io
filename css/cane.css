@@ -211,6 +211,27 @@ body {
         font-size: 150px;
     }
   }
+  @media screen and (min-width: 465px) {
+    .brand-box{
+      width: 408px;
+      height: 182px;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .brand-box{
+      width:306px; 
+      height:137px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .brand-box{
+      width: 230px;
+      height: 103px;
+    }
+  }
+  .brand-box{
+    display: inline-block;
+  }
   /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -281,6 +302,11 @@ body {
     padding: 2px 16px;
     background-color: #00b300;
     color: white;
+}
+.brand-img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 #loading {
 width: 100%;
