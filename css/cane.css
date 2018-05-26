@@ -211,22 +211,16 @@ body {
         font-size: 150px;
     }
   }
-  @media screen and (min-width: 465px) {
-    .brand-box{
-      width: 408px;
-      height: 182px;
-    }
-  }
-  @media screen and (max-width: 360px) {
-    .brand-box{
-      width:306px; 
-      height:137px;
-    }
-  }
   @media screen and (max-width: 320px) {
     .brand-box{
       width: 230px;
       height: 103px;
+    }
+  }
+  @media screen and (min-width: 465px) {
+    .brand-box{
+      width: 408px;
+      height: 182px;
     }
   }
   .brand-box{
