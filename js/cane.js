@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('html, body').animate({
       scrollTop: $(hash).offset().top
     }, 900, function(){
-   
+     
       // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
     });
@@ -25,9 +25,9 @@ $(document).ready(function(){
       var pos = $(this).offset().top;
 
       var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
     });
   });
 
@@ -36,12 +36,12 @@ $(document).ready(function(){
   });
   // When the user clicks on <span> (x), close the modal
   document.getElementsByClassName("modal-close")[0].onclick = function() {
-      $("#myModal").hide();
+    $("#myModal").hide();
   }
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == document.getElementById('myModal')) {
-        $("#myModal").hide();
+      $("#myModal").hide();
     }
   }
 
@@ -49,8 +49,8 @@ $(document).ready(function(){
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('/sw.js')
-    .then(function() {
-      console.log('Service worker registered!');
-    });
+  .register('/sw.js')
+  .then(function() {
+    console.log('Service worker registered!');
+  });
 }
