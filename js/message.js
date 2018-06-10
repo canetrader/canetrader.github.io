@@ -118,3 +118,7 @@ function onScroll(){
     fired = false;
   }
 }
+
+function goBack() {
+  window.history.back();
+}
