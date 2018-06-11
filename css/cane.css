@@ -420,3 +420,5 @@ footer .glyphicon {
   display:inline-block;
   text-align:left;
 }
+li > a {color:#000000;}
+.health{text-align:left;}
