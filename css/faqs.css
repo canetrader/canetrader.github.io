@@ -29,7 +29,7 @@ body {
 }
 h2 {
   font-size: 24px;
-  text-transform: uppercase;
+  text-transform: unset;
   color: #303030;
   font-weight: 600;
   margin-bottom: 30px;
@@ -113,6 +113,28 @@ h4 {
     background: -ms-linear-gradient(to bottom right, #ffffff 0%, #99ff99 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#99ff99',GradientType=1 );
     -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#99ff99',GradientType=1 );
+  }
+  .panel-rev{
+    color:   #262626;
+    background: #ffffff; 
+    background: linear-gradient(to bottom right, #99ff99, #ffffff);
+    background: -moz-linear-gradient(to bottom right, #99ff99 0%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#99ff99), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(to bottom right, #99ff99 0%, #ffffff 100%);
+    background: -o-linear-gradient(to bottom right, #99ff99 0%, #ffffff 100%);
+    background: -ms-linear-gradient(to bottom right, #99ff99 0%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ff99', endColorstr='#ffffff',GradientType=1 );
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ff99', endColorstr='#ffffff',GradientType=1 );
+  }
+  .benifits-name{
+    padding: 5px;
+  }
+  .benifits{
+    padding: 5px;
+    border-radius: 25px;
+    border: none;
+    background-color: none;
+    width: 100%;
   }
 .navbar {
   margin-bottom: 0;
