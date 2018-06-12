@@ -192,41 +192,12 @@
   </div><br>
   
   <h2>What our customers say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"Tastes natural, true to its name.."<br><span>N Gowthaman, Founder & CEO, Amman agency</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Great smell of real sugarcane. You’ll love it once bought. I recommend this everyone."<br><span>K N BarathSivam, CEO, Kumaran modern rice mill</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Highly satisfied with the product.. made me remember my childhood days, when sugar used to be of this quality! Too pure!! Thanks to Sugarfromorigin!!"<br><span>Anitha, Owner, Anitha departmental stores</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Highly recommended to all who care about their family"<br><span>L Barath, Director, Mudra Enterprises Pte Ltd</span></h4>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+  <a href="https://goo.gl/maps/nWoaDoVoJBS2" target="_blank" rel="noopener"><button class="btn btn-lg btn-primary">View all Google Reviews</button></a>
+  &emsp;<a href="http://bit.ly/2G3UkSD" target="_blank" rel="noopener"><button class="btn btn-lg btn-primary">Write Google Review</button></a>
+  <br>
+  <br>
+  <div id="google-reviews"></div>
+  <br>
 </div>
 
 <!-- Container (Pricing Section) -->
@@ -399,6 +370,7 @@
 <link rel="stylesheet" href="vendor/font-awesome/font-awesome.min.css" media="all">
 <!-- Theme CSS -->
 <link href="css/cane.min.css" rel="stylesheet" media="all">
+<link href="css/google-places.min.css" rel="stylesheet" media="all">
 <script language="javascript" type="text/javascript">
   window.onload = function(){ document.getElementById("loading").style.display = "none" }
 </script>
@@ -406,7 +378,9 @@
 <script src="vendor/jquery/jquery.min.js"></script>
 <!-- Bootstrap core js -->
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script async src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDI3VsVOMTbkc9q23uXDqoFGfViMeSL-Qo&libraries=places"></script>
 <script src="js/cane.min.js"></script>
+<script async src="js/google-places.min.js"></script>
 <script async src="js/message.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115017733-1"></script>

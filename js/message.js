@@ -115,6 +115,13 @@ function onScroll(){
   {
     var f = document.querySelectorAll('iframe')[0];
     f.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.275407528797!2d78.13291584999793!3d11.745637991627472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf73861e65c6f%3A0xcca15ca2b3be6f4a!2sCaneMan+Traders!5e0!3m2!1sen!2sin!4v1527325521354';
+
+    $("#google-reviews").googlePlaces({
+        placeId: 'ChIJb1zmYTj3qzsRSm--s6Jcocw' //Find placeID @: https://developers.google.com/places/place-id
+      , render: ['reviews']
+      , min_rating: 4
+      , max_rows:4
+   });
     fired = false;
   }
 }
