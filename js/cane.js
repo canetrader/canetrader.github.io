@@ -31,7 +31,25 @@ $(document).ready(function(){
     });
   });
 
+  $(document.body).on('touchmove', reviewAppend); // for mobile
+  $(window).on('scroll', reviewAppend);
+
 })
+
+var reviewFlag = true;
+// callback
+function reviewAppend(){ 
+  if(reviewFlag === true)
+  {
+    $("#google-reviews").googlePlaces({
+        placeId: 'ChIJb1zmYTj3qzsRSm--s6Jcocw' //Find placeID @: https://developers.google.com/places/place-id
+      , render: ['reviews']
+      , min_rating: 4
+      , max_rows:4
+   });
+    reviewFlag = false;
+  }
+}
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
