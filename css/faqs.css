@@ -419,3 +419,7 @@ footer .glyphicon {
   display:inline-block;
   text-align:left;
 }
+.native-btn {
+  background-color: #00b300;
+  color: #ffffff;
+}

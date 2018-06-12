@@ -422,3 +422,7 @@ footer .glyphicon {
 }
 li > a {color:#000000;}
 .health{text-align:left;}
+.native-btn {
+  background-color: #00b300;
+  color: #ffffff;
+}
