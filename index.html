@@ -85,6 +85,10 @@
         &emsp;<a href="jaggerybenifits.html"><button class="btn btn-lg btn-default native-btn">Why Jaggery?</button></a>
       </div>
       <div class="col-sm-4 text-center">
+        <div id="search-box">
+          <gcse:search></gcse:search>
+        </div>
+        <br>
         <span class="glyphicon glyphicon-shopping-cart logo"></span>
       </div>
     </div>
@@ -380,7 +384,8 @@
 <!-- Theme CSS -->
 <link href="css/cane.min.css" rel="stylesheet" media="all">
 <script language="javascript" type="text/javascript">
-  window.onload = function(){ document.getElementById("loading").style.display = "none" }
+  window.onload = function(){ document.getElementById("loading").style.display = "none";
+  document.getElementById('gsc-i-id1').placeholder = 'Custom Search'; }
 </script>
 <!-- JQuery core js -->
 <script src="vendor/jquery/jquery.min.js"></script>
@@ -390,6 +395,7 @@
 <script src="js/cane.min.js"></script>
 <script async src="js/google-places.min.js"></script>
 <script async src="js/message.min.js"></script>
+<script async src="js/cse.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115017733-1"></script>
 <script>

@@ -65,6 +65,12 @@
     </div>
 
     <div class="container-fluid text-center">
+      <div id="search-box">
+        <br>
+          <gcse:search></gcse:search>
+        <br>
+      </div>
+
       <p>
         <div class="site-url">
           <h2><a href="index.html#myPage">Caneman Traders</a></h2>  
@@ -181,7 +187,11 @@
     <!-- JQuery core js -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script async src="js/message.min.js"></script>
-
+    <script async src="js/cse.min.js"></script>
+    <script language="javascript" type="text/javascript">
+      window.onload = function(){
+      document.getElementById('gsc-i-id1').placeholder = 'Custom Search'; }
+    </script>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
